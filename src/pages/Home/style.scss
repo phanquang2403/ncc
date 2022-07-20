@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+.home {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+  @include tabletS {
+    grid-template-columns: 1fr;
+  }
+}

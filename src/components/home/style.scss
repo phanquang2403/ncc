@@ -1,0 +1,139 @@
+@import "../../styles/index.scss";
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  @include desktopS {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  &__img {
+    @include desktopS {
+      max-width: 180px;
+    }
+
+    @include tabletLL {
+      max-width: 155px;
+    }
+  }
+}
+.content {
+  background-color: #efefef;
+  margin: 0 129px;
+  padding: 38px 0;
+
+  @include desktopS {
+    margin: 0 5%;
+  }
+
+  @include tabletLL {
+    margin: 0 20px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 18px;
+  }
+
+  &__text {
+    padding: 0 269px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 400;
+    color: #000000;
+
+    @include desktopS {
+      padding: 0 5%;
+    }
+
+    @include tabletLL {
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+}
+.content-list-wrap {
+  margin: 0 129px;
+  margin-top: 40px;
+
+  @include desktopS {
+    margin: 0 5%;
+    margin-top: 20px;
+  }
+
+  @include tabletLL {
+    margin: 0 20px;
+    margin-top: 15px;
+  }
+}
+.content-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+
+  @include desktopS {
+    gap: 20px;
+  }
+
+  @include tabletLL {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mobileLL {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-item {
+  &__img {
+    width: 128px;
+    height: 128px;
+    display: inline;
+    float: left;
+    @include desktopS {
+      width: 100px;
+      height: 100px;
+    }
+
+    @include mobileLL {
+      width: 115px;
+      height: 115px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  &__box {
+    margin-top: 18px;
+  }
+
+  &__top {
+    // display: flex;
+    gap: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #000000;
+    font-weight: 400;
+    flex: 1;
+    display: inline;
+  }
+
+  &__detail {
+    @extend .content-item__text;
+  }
+}

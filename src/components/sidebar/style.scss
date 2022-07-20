@@ -1,0 +1,35 @@
+@import "../../styles/index.scss";
+.list-sidebar {
+  height: 100vh;
+  background-color: #191718;
+  @include tabletS {
+    height: max-content;
+    display: flex;
+  }
+}
+
+.item-sidebar {
+  border-bottom: 1px solid #5c5c5c;
+  transition: all 0.2s;
+  &:hover {
+    background-color: #5c5c5c;
+    .link-sidebar {
+      color: #ffffff;
+    }
+  }
+  &.active {
+    .link-sidebar {
+      color: #ffffff;
+    }
+  }
+}
+
+.link-sidebar {
+  font-size: 16px;
+  font-weight: 700;
+  color: #aaaaaa;
+  line-height: 18.75px;
+  padding: 14px 16px 11px 16px;
+  text-decoration: none;
+  display: block;
+}

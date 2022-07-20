@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+img {
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@mixin desktopFull {
+  @media (max-width: ($desktopFull)) {
+    @content;
+  }
+}
+
+$desktopL: 1800px;
+@mixin desktopL {
+  @media (max-width: ($desktopL)) {
+    @content;
+  }
+}
+
+$desktopM: 1560px;
+@mixin desktopM {
+  @media (max-width: ($desktopM)) {
+    @content;
+  }
+}
+$desktopS: 1448px;
+@mixin desktopS {
+  @media (max-width: ($desktopS)) {
+    @content;
+  }
+}
+$note: 1219px;
+@mixin note {
+  @media (max-width: ($note)) {
+    @content;
+  }
+}
+$tabletLL: 1080px;
+@mixin tabletLL {
+  @media (max-width: ($tabletLL)) {
+    @content;
+  }
+}
+
+$tabletL: 1024px;
+@mixin tabletL {
+  @media (max-width: ($tabletL)) {
+    @content;
+  }
+}
+$tabletM: 960px;
+@mixin tabletM {
+  @media (max-width: ($tabletM)) {
+    @content;
+  }
+}
+
+$tabletMS: 867px;
+
+@mixin tableMS {
+  @media (max-width: ($tabletMS)) {
+    @content;
+  }
+}
+$tabletS: 768px;
+@mixin tabletS {
+  @media (max-width: ($tabletS)) {
+    @content;
+  }
+}
+$mobileLL: 600px;
+@mixin mobileLL {
+  @media (max-width: ($mobileLL)) {
+    @content;
+  }
+}
+$mobileL: 425px;
+@mixin mobileL {
+  @media (max-width: ($mobileL)) {
+    @content;
+  }
+}
+$mobileM: 375px;
+@mixin mobileM {
+  @media (max-width: ($mobileM)) {
+    @content;
+  }
+}
+$mobileS: 359px;
+@mixin mobileS {
+  @media (max-width: ($mobileS)) {
+    @content;
+  }
+}
